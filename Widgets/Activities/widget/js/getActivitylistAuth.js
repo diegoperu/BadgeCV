@@ -4,7 +4,7 @@ if(XMLHttpRequest) var x = new XMLHttpRequest();
 else var x = new ActiveXObject("Microsoft.XMLHTTP");
 
 var projectID = 350; //here you can set your personal project ID
-var url = "http://yoursite/badgecraft/activitylist.php?auth=".concat(authdata)."&projectID=".projectID; //here you have to set the address of the php file
+var url = "http://yoursite/badgecraft/activitylist.php?auth=".concat(authdata)+"&projectID="+projectID; //here you have to set the address of the php file
 
 x.open("GET", url, true);
 x.send();
